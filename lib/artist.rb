@@ -22,7 +22,7 @@ if ind==nil
   @@artists << a
     return a
 else
-  return @@artist[ind]
+  return @@artists[ind]
 end
 
 
