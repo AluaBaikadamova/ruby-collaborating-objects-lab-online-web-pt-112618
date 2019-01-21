@@ -13,6 +13,7 @@ class Song
    a=Song.new(filename.split(" - ")[1])
 b=Artist.find_or_create_by_name(filename.split(" - ")[0])
 a.artist=b
+b.songs<<a
 #Artist.add_song(self)
 #a.artist.name=filename.split(" - ")[0]
 #@@all << a
