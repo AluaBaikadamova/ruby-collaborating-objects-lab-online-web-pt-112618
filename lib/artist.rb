@@ -3,9 +3,9 @@ class Artist
 
 
 #  @@artists = []
- @@songs = []
+ #@@songs = []
   def initialize(name)
-    
+    @@songs = []
     @name = name
   @@artists = []
  # @@songs = []
@@ -21,7 +21,7 @@ class Artist
 if ind==nil
   a=Artist.new(name)
   @@artists << a
-@@songs=[]
+#@@songs=[]
     return a
 else
   return @@artists[ind]
