@@ -21,7 +21,7 @@ class Artist
 if ind==nil
   a=Artist.new(name)
   @@artists << a
-
+@@songs=[]
     return a
 else
   return @@artists[ind]
