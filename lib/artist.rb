@@ -55,6 +55,6 @@ self.class.all << self
      
   end
   def self.song_count
-    @songs.count
+    @@songs.count
   end
 end
