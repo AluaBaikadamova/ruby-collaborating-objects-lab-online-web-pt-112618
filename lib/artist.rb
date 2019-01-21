@@ -16,7 +16,8 @@ class Artist
     @@songs << song
   end
  def find_or_create_by_name (name)
-   if artists
+   t=false
+   @@artists.each {|item| item.name==name}
  end
  def songs
     @@songs
