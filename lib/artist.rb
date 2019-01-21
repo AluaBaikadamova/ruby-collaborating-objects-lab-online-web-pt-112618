@@ -49,7 +49,9 @@ end
  end
   
   def self.all
-    @@artists
+    @@artists.each do |a|
+      puts "#{a}"
+    end
   end
   def self.song_count
     @@songs.count
