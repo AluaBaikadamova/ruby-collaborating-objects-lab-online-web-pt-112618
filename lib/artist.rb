@@ -1,6 +1,6 @@
 class Artist
   attr_accessor :name
- 
+
 
   @@artists = []
  @@songs = []
@@ -8,6 +8,7 @@ class Artist
     
     @name = name
    @@artists << self
+  
   end
   
   def add_song(song)
@@ -20,6 +21,7 @@ class Artist
 if ind==nil
   a=Artist.new(name)
   @@artists << a
+
     return a
 else
   return @@artists[ind]
