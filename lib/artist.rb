@@ -3,7 +3,7 @@ class Artist
 
 
 #  @@artists = []
- @songs = []
+ @@songs = []
   def initialize(name)
    # @@songs = []
     @name = name
@@ -14,7 +14,7 @@ class Artist
   def add_song(song)
     
     song.artist = self 
-    @songs << song
+   @@songs << song
   end
  def self.find_or_create_by_name (name)
  ind=@@artists.index {|x| x.name==name}
@@ -31,11 +31,11 @@ end
 
  end
  def songs
-    @songs
+    @@songs
   end
   
   def print_songs
-    @songs.each do |s|
+    @@songs.each do |s|
       puts "#{s.name}"
     end
   end
