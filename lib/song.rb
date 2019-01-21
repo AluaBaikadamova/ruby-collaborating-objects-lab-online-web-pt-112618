@@ -14,6 +14,7 @@ class Song
 #b=Artist.find_or_create_by_name(filename.split(" - ")[0])
 #a.artist(b)
 #Artist.add_song(self)
+a.artist.name=
 @@all << a
 return a
   end
