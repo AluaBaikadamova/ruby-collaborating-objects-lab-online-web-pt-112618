@@ -8,7 +8,7 @@ class Artist
     
     @name = name
   @@artists = []
-  @@songs = []
+ # @@songs = []
   end
   
   def add_song(song)
