@@ -15,7 +15,7 @@ class Artist
     song.artist = self 
     @@songs << song
   end
- def find_or_create_by_name (name)
+ def self.find_or_create_by_name (name)
  ind=@@artists.index {|x| x.name==name}
 if ind==nil
   @name=name
