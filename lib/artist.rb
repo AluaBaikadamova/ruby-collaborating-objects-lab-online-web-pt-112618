@@ -44,7 +44,7 @@ end
  #   add_song(a)
 #  end
   
-  def self.save
+  def save
  self.class.all << self
 #self.all<<self
  end
