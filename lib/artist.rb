@@ -18,7 +18,7 @@ class Artist
  def self.find_or_create_by_name (name)
  ind=@@artists.index {|x| x.name==name}
 if ind==nil
-  self.name=name
+  @name=name
   @@artists << self
 end
      self
