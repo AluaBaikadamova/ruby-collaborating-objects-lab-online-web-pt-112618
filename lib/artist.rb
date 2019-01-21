@@ -26,6 +26,12 @@ end
  def songs
     @@songs
   end
+  
+  def self.print_songs
+    @@songs.each do |s|
+      puts "#{s.name}"
+    end
+  end
   def add_song_by_name(name)
     a=Song.new(name)
     add_song(a)
