@@ -27,7 +27,7 @@ end
     @@songs
   end
   
-  def self.print_songs
+  def self.print_songs(name)
     @@songs.each do |s|
       puts "#{s.name}"
     end
