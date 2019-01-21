@@ -16,17 +16,11 @@ class Artist
     @@songs << song
   end
  def find_or_create_by_name (name)
-   t=false
-   @@artists.each do |item| 
-     if item.name==name
-       t=true
-     end
-   end
-   if t==false
-     a=Artist.new(name)
-     @@artist<<a
-     
-   end
+ ind=@@artists.index {|x| x.name==name}
+if ind==nil
+  @name=name
+  @@artists << self
+end
      
  end
  def songs
