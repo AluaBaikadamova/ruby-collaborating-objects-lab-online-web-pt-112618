@@ -23,6 +23,10 @@ class Artist
      end
    end
    if t==false
+     a=Artist.new(name)
+     @@artist<<a
+     
+   end
      
  end
  def songs
