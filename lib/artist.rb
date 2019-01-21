@@ -21,7 +21,7 @@ if ind==nil
   @name=name
   @@artists << self
 end
-     
+     self
  end
  def songs
     @@songs
