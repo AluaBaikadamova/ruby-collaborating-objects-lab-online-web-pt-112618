@@ -46,6 +46,7 @@ end
   
   def save
 self.class.all << self
+songs=[]
 #self.all<<self
  end
   
