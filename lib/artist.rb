@@ -21,7 +21,7 @@ if ind==nil
   a=Artist.new(name)
   @@artists << a
 end
-  
+  return a
  end
  def songs
     @@songs
