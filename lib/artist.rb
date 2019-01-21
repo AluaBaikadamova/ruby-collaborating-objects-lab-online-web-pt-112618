@@ -20,8 +20,13 @@ class Artist
 if ind==nil
   a=Artist.new(name)
   @@artists << a
+    return a
+else
+  return @@artist[ind]
 end
-  return a
+
+
+
  end
  def songs
     @@songs
