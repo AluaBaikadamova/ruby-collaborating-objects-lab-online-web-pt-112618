@@ -15,6 +15,7 @@ b=Artist.find_or_create_by_name(filename.split(" - ")[0])
 a.artist(b)
 #Artist.add_song(self)
 @@all << a
+return a
   end
   
   def artist_name=(name) 
