@@ -50,7 +50,7 @@ end
  end
   
  def self.all
-  @@all
+  @@artists
      
   end
   def self.song_count
