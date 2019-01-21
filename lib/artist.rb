@@ -49,11 +49,11 @@ end
 #self.all<<self
  end
   
-  def self.all
-    @@artists.each do |a|
-      puts "#{a}"
-    end
-  end
+ # def self.all
+ #   @@artists.each do |a|
+  #    puts "#{a}"
+  #  end
+ # end
   def self.song_count
     @@songs.count
   end
