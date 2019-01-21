@@ -7,7 +7,7 @@ class Artist
    # @@songs = []
     @name = name
   @@artists = []
- # @@songs = []
+  @@songs = []
   end
   
   def add_song(song)
@@ -20,10 +20,11 @@ class Artist
 if ind==nil
   a=Artist.new(name)
   @@artists << a
-@@songs=[]
+@@songs<<self
     return a
 else
   return @@artists[ind]
+  @@songs<<self
 end
 
 
