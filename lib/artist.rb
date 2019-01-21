@@ -39,10 +39,10 @@ end
       puts "#{s.name}"
     end
   end
-  def add_song_by_name(name)
-    a=Song.new(name)
-    add_song(a)
-  end
+ # def add_song_by_name(name)
+  #  a=Song.new(name)
+ #   add_song(a)
+#  end
   
   def save
    self.class.all << self
