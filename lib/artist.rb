@@ -50,7 +50,7 @@ self.class.all << self
  end
   
  def self.all
-  @@artists
+ self.artists
      
   end
   def self.song_count
