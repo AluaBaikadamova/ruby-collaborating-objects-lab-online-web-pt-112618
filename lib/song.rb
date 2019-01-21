@@ -24,12 +24,12 @@ return a
     
   end
   
-   def artist=(artist)
-    @artist = artist
-  end
-   def artist
-     @artist
-   end
+  # def artist=(artist)
+ #   @artist = artist
+#  end
+ #  def artist
+ #    @artist
+ #  end
   
   def artist_name
  if self.artist!=nil 
