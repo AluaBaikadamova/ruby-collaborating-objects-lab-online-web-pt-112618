@@ -45,8 +45,8 @@ end
 #  end
   
   def save
-# self.class.all << self
-self.all<<self
+self.class.all << self
+#self.all<<self
  end
   
  def self.all
